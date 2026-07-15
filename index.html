@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio </title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+     <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+     </nav>
+    <!-- Hero Section-->
+     <header>
+        <h1>Hi, I'm Ajay Kumar.N</h1>
+        <p>I'm a passionate web developer</p>
+        <a href="#contact" class="btn">Hire Me</a>
+     </header>
+     <!--About Section-->
+     <section id="about">
+        <h2>About Me</h2>
+        <img src="/photo/profile.jpeg" alt="Profile Picture" width="300" height="200">
+        <p>I'm a passionate web developer with experience in creating responsive and user-friendly websites.</p>
+     </section>
+    <!--Skills Section-->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul type="square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A responsive portfolio website built with React.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A RESTful API built with Node.js and Express.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        </section>  
+    <!--Contact Section-->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind? lets collaborate!</p>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">--Select Subject--</option>
+                <option value="web-development">Web Development</option>
+                <option value="ui-ux-design">UI/UX Design</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:ajay2007nagesh@gmail.com">ajay2007nagesh@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/ajay0950" target="_blank">github.com/ajay0950</a></p>
+    </section>
+<!--Footer-->
+    <footer>
+        <p>&copy; 2024 Ajay Kumar.N. All rights reserved.</p>
+    </footer>
+</body>
+</html>
