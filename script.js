@@ -48,13 +48,14 @@ const navItems = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
-        if(window.scrollY >= section.offsetTop-100) {
+        const sectionTop=section.offsetTop - 100;
+        if(window.scrollY >= sectionTop) {
             current = section.getAttribute('id');
         }
     });
-    navItems.forEach(item => {
-        item.classList.remove('active');
-        if (link.getAttribute('href') === `${current}`) {
+    navItems.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     });
