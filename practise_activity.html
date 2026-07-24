@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Practice Activity</title>
+</head>
+<body>
+
+    <!-- Form containing the input box and button -->
+    <form action="#" method="post" id="practiceForm">
+        <label for="name">NAME :</label>
+        <input type="text" id="myInput" placeholder="Enter your name here" required>
+        <button type="submit">Click Me</button>
+    </form>
+
+    <!-- JavaScript to handle the tasks -->
+    <script>
+        // Select the form and input elements
+        const form = document.getElementById('practiceForm');
+        const input = document.getElementById('myInput');
+
+        // Listen for the form submission
+        form.addEventListener('submit', function(event) {
+            // 1. Prevent form submission (stops page reloading)
+            event.preventDefault();
+
+            // Get the current value from the input box
+            const inputValue = input.value;
+
+            // 2. Show alert on button click
+            alert("Input Value: " + inputValue);
+
+            // 3. Print input value in console
+            console.log("Input Value:", inputValue);
+        });
+    </script>
+
+</body>
+</html>
